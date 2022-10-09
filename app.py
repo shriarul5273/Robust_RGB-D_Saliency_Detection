@@ -1,9 +1,14 @@
+import multiprocessing
 import onnxruntime
 from torchvision import transforms
 import torch
 import torch.nn.functional as F
 import gradio as gr
-ort_sess = onnxruntime.InferenceSession("RFNet.onnx",use_external_data_format=True)
+
+sess_options = onnxruntime.SessionOptions()
+sess_options.graph_optimization_level = onnxruntime.GraphOptimizationLevel.ORT_ENABLE_ALL
+sess_options.intra_op_num_threads = multiprocessing.cpu_count()
+ort_sess = onnxruntime.InferenceSession("RFNet.onnx", sess_options=sess_options)
 
 
 preprocess_img = transforms.Compose([
