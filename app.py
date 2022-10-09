@@ -65,4 +65,5 @@ outputs = gr.Image(type="pil", label="Saliency Map")
 
 gr.Interface(inference, inputs=[input_1,input_2,input_3], outputs=outputs,
                 title=title,examples=examples,
-                description=description,article=article,cache_examples=False).launch()
+                description=description,
+                article=article,cache_examples=False).launch(server_name="0.0.0.0", server_port=7000)
