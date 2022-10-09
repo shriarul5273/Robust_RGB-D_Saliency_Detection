@@ -3,7 +3,7 @@ from torchvision import transforms
 import torch
 import torch.nn.functional as F
 import gradio as gr
-ort_sess = onnxruntime.InferenceSession("RFNet.onnx")
+ort_sess = onnxruntime.InferenceSession("RFNet.onnx",use_external_data_format=True)
 
 
 preprocess_img = transforms.Compose([
