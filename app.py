@@ -6,7 +6,10 @@ import torch.nn.functional as F
 import gradio as gr
 
 sess_options = onnxruntime.SessionOptions()
-ort_sess = onnxruntime.InferenceSession("RFNet.onnx", providers=["CPUExecutionProvider"])
+sess_options.graph_optimization_level = onnxruntime.GraphOptimizationLevel.ORT_ENABLE_ALL
+ort_sess = onnxruntime.InferenceSession("RFNet.onnx", 
+                                providers=["CPUExecutionProvider","CUDAExecutionProvider"], 
+                                sess_options=sess_options)
 
 
 preprocess_img = transforms.Compose([
