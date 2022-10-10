@@ -34,4 +34,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{secrets.DOCKER_USERNAME}}/robust_rgb-d_saliency_detection:latest , ${{secrets.DOCKER_USERNAME}}/robust_rgb-d_saliency_detection:${{github.run_number}}
+          tags: ${{secrets.DOCKER_USERNAME}}/robust_rgb-d_saliency_detection:latest , ${{secrets.DOCKER_USERNAME}}/robust_rgb-d_saliency_detection:1.0.${{github.run_number}}
