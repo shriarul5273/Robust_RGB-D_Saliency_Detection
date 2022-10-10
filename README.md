@@ -10,7 +10,8 @@ pinned: false
 ---
 
 [![Docker Image Build and Push](https://github.com/shriarul5273/Robust_RGB-D_Saliency_Detection/actions/workflows/docker-image.yml/badge.svg)](https://github.com/shriarul5273/Robust_RGB-D_Saliency_Detection/actions/workflows/docker-image.yml)   [![Deploy to Hugging Face Spaces](https://github.com/shriarul5273/Robust_RGB-D_Saliency_Detection/actions/workflows/huggingface.yml/badge.svg)](https://github.com/shriarul5273/Robust_RGB-D_Saliency_Detection/actions/workflows/huggingface.yml)
-[:hugs: HuggingFace-Space](https://huggingface.co/spaces/shriarul5273/Robust_RGB-D_Saliency_Detection)
+[:hugs: HuggingFace-Space](https://huggingface.co/spaces/shriarul5273/Robust_RGB-D_Saliency_Detection) 
+[:whale: Docker-Image](https://hub.docker.com/repository/docker/shriarul5273/robust_rgb-d_saliency_detection) 
 [![arXiv](https://img.shields.io/badge/arXiv-2208.01762-00ff00.svg)](https://arxiv.org/pdf/2208.01762.pdf)
 ## Deployment of the paper:
 
