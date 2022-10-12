@@ -38,7 +38,6 @@ def inference(img,depth,GT):
 
 
 title = "Robust RGB-D Fusion for Saliency Detection"
-
 description = """ Deployment of the paper: 
 [Robust RGB-D Fusion for Saliency Detection](https://arxiv.org/pdf/2208.01762.pdf) 
 published at the International Conference on 3D Vision 2022 (3DV 2022). 
@@ -73,3 +72,4 @@ gr.Interface(inference, inputs=[input_1,input_2,input_3], outputs=outputs,
                 title=title,examples=examples,
                 description=description,
                 article=article,cache_examples=False).launch(server_name="0.0.0.0", server_port=7000)
+
