@@ -24,9 +24,9 @@ https://huggingface.co/spaces/shriarul5273/Robust_RGB-D_Saliency_Detection
 
 ## Run container from Docker Hub Image 
 ```
-docker run -it -p 7000:7000 shriarul5273/robust_rgb-d_saliency_detection:latest
+docker run -it -p 7860:7860 shriarul5273/robust_rgb-d_saliency_detection:latest
 ```
-Deployed app (in port 7000) http://localhost:7000 
+Deployed app (in port 7860) http://localhost:7860 
 
 ## Build and run container locally
 
@@ -38,9 +38,9 @@ docker build . --tag robust_rgb-d_saliency_detection:latest
 2. Run container from the 
 
 ```
-docker run -it -d -p 7000:7000  robust_rgb-d_saliency_detection:latest
+docker run -it -d -p 7860:7860  robust_rgb-d_saliency_detection:latest
 ```
-Deployed app (in port 7000) http://localhost:7000 
+Deployed app (in port 7860) http://localhost:7860 
 
 
 
