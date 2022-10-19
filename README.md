@@ -32,7 +32,7 @@ Deployed app (in port 7860) http://localhost:7860
 
 1. Build container 
 ```
-docker build . --tag robust_rgb-d_saliency_detection:latest
+docker build . --tag robust_rgb-d_saliency_detection:latest 
 ```
 
 2. Run container from the 
@@ -43,4 +43,4 @@ docker run -it -d -p 7860:7860  robust_rgb-d_saliency_detection:latest
 Deployed app (in port 7860) http://localhost:7860 
 
 
-
+.
