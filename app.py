@@ -1,4 +1,3 @@
-import multiprocessing
 import onnxruntime
 from torchvision import transforms
 import torch
